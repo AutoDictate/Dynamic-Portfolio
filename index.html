@@ -135,7 +135,7 @@
                 </div>
             </div>
             <a class="btn" onclick="alertmsg()">See More</a>
-            <span id="see-msg"></span>
+            <span id="see-msg">More Projects will be uploaded soon !!</span>
         </div>
     </div>
 <!-- --------------------------------------------CONTACT---------------------------------------------------------- -->
@@ -201,7 +201,7 @@
 
 
 <script>
-    var tablinks = document.getElementsByClassName(".tab-links");
+    var tablinks = document.getElementsByClassName("tab-links");
     var tabcontents = document.getElementsByClassName("tab-contents");
 
     function opentab(tabname){
@@ -216,7 +216,7 @@
         document.getElementById(tabname).classList.add("active-tab");
     }
     function alertmsg(){
-        document.getElementById("see-msg").innerHTML = "More Projects will be Uploaded Soon !!",setTimeout(function(){
+        document.getElementById("see-msg").style.display = "inline-block",setTimeout(function(){
             document.getElementById("see-msg").innerHTML = "";
         },5000);
     }
@@ -247,6 +247,8 @@ const scriptURL = 'https://script.google.com/macros/s/AKfycbzRCiyG9IDCGC7XpbYloH
         })
         .catch(error => console.error('Error!', error.message))
     })
+
+
 </script>
 
 
