@@ -135,7 +135,9 @@
                 </div>
             </div>
             <a class="btn" onclick="alertmsg()">See More</a>
-            <span id="see-msg">More Projects will be uploaded soon !!</span>
+            <div class="update-msg">
+                <span id="see-msg">More Projects will be uploaded soon !!</span>
+            </div>
         </div>
     </div>
 <!-- --------------------------------------------CONTACT---------------------------------------------------------- -->
@@ -217,7 +219,7 @@
     }
     function alertmsg(){
         document.getElementById("see-msg").style.display = "inline-block",setTimeout(function(){
-            document.getElementById("see-msg").innerHTML = "";
+            document.getElementById("see-msg").style.display = "none";
         },5000);
     }
 
